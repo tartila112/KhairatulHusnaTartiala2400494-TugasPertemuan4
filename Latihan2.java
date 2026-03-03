@@ -14,10 +14,25 @@ public class Latihan2 {
         int akhir = input.nextInt();
 
         System.out.println("Deretan angka genap antara " + awal + " dan " + akhir + ":");
-        for (int i = awal; i<= akhir; i++){
+        if(awal < akhir){
+            for (int i = awal; i<= akhir; i++){
+                if(i %2 == 0){
+                System.out.print(i + " ");
+                }
+            }
+        }else if (awal > akhir){
+            for (int i = awal; i>= akhir; i--){
             if(i %2 == 0){
                 System.out.print(i + " ");
             }
         }
+        } else {
+            System.out.println("Batas awal dan batas akhir tidak boleh sama.");
+        }
+        // for (int i = awal; i<= akhir; i++){
+        //     if(i %2 == 0){
+        //         System.out.print(i + " ");
+        //     }
+        // }
     }
 }
